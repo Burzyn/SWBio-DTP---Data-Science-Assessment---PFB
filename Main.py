@@ -73,7 +73,7 @@ while True:
                 if step2 == "0" or  step2 == "'0'":
                     Loader = 0
                 print(TAB2)
-        elif step1 == "2":
+        elif step1 == "1":
             data = pd.read_csv("https://drive.google.com/file/d/1cRio9VjuNScFA8TrDm7xGKHIob1qqzwk/view?usp=sharing")
             Loader = 0
             data["Replicate"] = 1
