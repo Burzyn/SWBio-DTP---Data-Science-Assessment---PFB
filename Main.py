@@ -180,7 +180,7 @@ DataCopy = DataRef4
 
 for col in DataRef2.columns:
     Updater2 = DataRef1.groupby(["Sample", "Timepoint"])[col].mean()
-    SDUp = DataRef1.groupby(["Sample", "Timepoint"])[col].std()
+    SDUp = DataRef3.groupby(["Sample", "Timepoint"])[col].std()
     Avg2 = Updater2.tolist()
     Keys2 = Updater2.index.tolist()
     DataRef4[col] = Avg2
