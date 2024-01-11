@@ -1,0 +1,28 @@
+
+<> Files that can be loaded together as groups (or experiments):
+
+      Group 1:
+      
+      - PFB - Sample Data 1.csv
+      - PFB - Sample Data 2.csv
+      
+      Group 2:
+      - PFB - Sample Data 1 - Updated.csv
+      - PFB - Sample Data 2 - Updated.csv
+      
+      Group 3:
+      - PFB - Alternative Sample Data 1.csv
+
+<> Notes: 
+
+      The files from 'Group 1' and 'Group 2' can be loaded together as 4 replciates. However, some values will be
+      exactly the same between these four files. I suggest using the the 'Group 2' data instead of 'Group 1' data.
+      The "PFB - Alternative Sample Data 1.csv" is the only file that represents a different experimental layout than other files.
+      Thus the "PFB - Alternative Sample Data 1" should not to be loaded together with other files as another replicate in one go.
+      To vilsialise another experiment re-run the whole script. Keep in mind that all data attached contain simulated
+      and not real values.
+
+      Of course you can test the code further yourself, by changing/adding the data specimens, timepoints data, or "Samples", 
+      as long as the names of the two columns "Sample", and "Timepoint" remain unchanged and as long as these 
+      are the last two columns in the data frame, and in the same order. The code may not also work should some values be NaNs.
+      The "Timepoint" must be an integer, and "Sample" should be a string.
